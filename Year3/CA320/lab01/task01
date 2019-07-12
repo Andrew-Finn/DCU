@@ -1,0 +1,67 @@
+GHCi, version 8.6.5: http://www.haskell.org/ghc/  :? for help
+Prelude> 3
+3
+Prelude> 3.0
+3.0
+Prelude> '3'
+'3'
+Prelude> "3"
+"3"
+Prelude> 3+4
+7
+Prelude> 20 `div` 5
+4
+Prelude> 20 `mod` 5
+0
+Prelude> 20 / 5
+4.0
+Prelude> 20.0 / 5.0
+4.0
+Prelude> 2 ^ 5
+32
+Prelude> sqrt 2.0
+1.4142135623730951
+Prelude> 
+Prelude> sqrt (-1)
+NaN
+Prelude> sqrt 5*5
+11.180339887498949
+Prelude> sqrt (5*5)
+5.0
+Prelude> sqrt 15.0 >= 3.5
+True
+Prelude> sin (pi/2.0)
+1.0
+Prelude> 6 < 4
+False
+Prelude> 3>4 && 4>3
+False
+Prelude> 3>4 || 4>3
+True
+Prelude> not (3>4 && 4>3)
+True
+Prelude> "Hello World!\n"
+"Hello World!\n"
+Prelude> putStr "Hello World!\n"
+Hello World!
+Prelude> "abc" ++ "def"
+"abcdef"
+Prelude> length "This sentence no verb."
+22
+Prelude> words "The quick brown fox jumped over the lazy dog"
+["The","quick","brown","fox","jumped","over","the","lazy","dog"]
+Prelude> "The length of \"this sentence\" is :" ++
+
+<interactive>:26:42: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+Prelude> show (length "this sentence")
+"13"
+Prelude> words "The quick brown fox jumped over the lazy dog"
+["The","quick","brown","fox","jumped","over","the","lazy","dog"]
+Prelude> "The length of \"this sentence\" is :" ++
+
+<interactive>:29:42: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+Prelude> show (length "this sentence")
+"13"
+

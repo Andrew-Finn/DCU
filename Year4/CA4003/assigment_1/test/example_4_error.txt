@@ -1,0 +1,59 @@
+main is
+{
+    var arg1: integer;
+    var arg2: integer;
+    var result: integer;
+    const five: integer = 5;
+    arg1 = -6;
+    arg2 = five;
+    result = multiply(arg1,arg2);
+}
+integer multiply(x: integer, y: integer)
+
+    var result: integer;
+    var minus_sign: boolean;
+
+    // figure out sign of results and convert args to absolute values
+    if (x < 0 && y >= 0)
+    {
+        minus_sign = true;
+        x = -x;
+    }
+    else
+    {
+        if y < 0 && x >= 0
+        {
+            minus_sign = true;
+            y = -y;
+        }
+        else
+        {
+            if (x < 0) && y < 0
+            {
+                minus_sign = false;
+                x = -x;
+                y = -y;
+            }
+            else
+            {
+                minus_sign = false;
+            }
+        }
+    }
+    result = 0;
+
+    while (y > 0)
+    {
+        result = result + x;
+        y = y - 1;
+    }
+    if minus_sign  ==  true
+    {
+        result = -result;
+    }
+    else
+    {
+        skip;
+    }
+    return(result)
+}

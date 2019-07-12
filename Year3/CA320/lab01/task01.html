@@ -1,0 +1,67 @@
+<pre>GHCi, version 8.6.5: http://www.haskell.org/ghc/  :? for help
+Prelude&gt; 3
+3
+Prelude&gt; 3.0
+3.0
+Prelude&gt; &apos;3&apos;
+&apos;3&apos;
+Prelude&gt; &quot;3&quot;
+&quot;3&quot;
+Prelude&gt; 3+4
+7
+Prelude&gt; 20 `div` 5
+4
+Prelude&gt; 20 `mod` 5
+0
+Prelude&gt; 20 / 5
+4.0
+Prelude&gt; 20.0 / 5.0
+4.0
+Prelude&gt; 2 ^ 5
+32
+Prelude&gt; sqrt 2.0
+1.4142135623730951
+Prelude&gt;
+Prelude&gt; sqrt (-1)
+NaN
+Prelude&gt; sqrt 5*5
+11.180339887498949
+Prelude&gt; sqrt (5*5)
+5.0
+Prelude&gt; sqrt 15.0 &gt;= 3.5
+True
+Prelude&gt; sin (pi/2.0)
+1.0
+Prelude&gt; 6 &lt; 4
+False
+Prelude&gt; 3&gt;4 &amp;&amp; 4&gt;3
+False
+Prelude&gt; 3&gt;4 || 4&gt;3
+True
+Prelude&gt; not (3&gt;4 &amp;&amp; 4&gt;3)
+True
+Prelude&gt; &quot;Hello World!\n&quot;
+&quot;Hello World!\n&quot;
+Prelude&gt; putStr &quot;Hello World!\n&quot;
+Hello World!
+Prelude&gt; &quot;abc&quot; ++ &quot;def&quot;
+&quot;abcdef&quot;
+Prelude&gt; length &quot;This sentence no verb.&quot;
+22
+Prelude&gt; words &quot;The quick brown fox jumped over the lazy dog&quot;
+[&quot;The&quot;,&quot;quick&quot;,&quot;brown&quot;,&quot;fox&quot;,&quot;jumped&quot;,&quot;over&quot;,&quot;the&quot;,&quot;lazy&quot;,&quot;dog&quot;]
+Prelude&gt; &quot;The length of \&quot;this sentence\&quot; is :&quot; ++
+
+<b>&lt;interactive&gt;:26:42: </b><font color="#EF2929"><b>error:</b></font>
+<b>    parse error (possibly incorrect indentation or mismatched brackets)</b>
+Prelude&gt; show (length &quot;this sentence&quot;)
+&quot;13&quot;
+Prelude&gt; words &quot;The quick brown fox jumped over the lazy dog&quot;
+[&quot;The&quot;,&quot;quick&quot;,&quot;brown&quot;,&quot;fox&quot;,&quot;jumped&quot;,&quot;over&quot;,&quot;the&quot;,&quot;lazy&quot;,&quot;dog&quot;]
+Prelude&gt; &quot;The length of \&quot;this sentence\&quot; is :&quot; ++
+
+<b>&lt;interactive&gt;:29:42: </b><font color="#EF2929"><b>error:</b></font>
+<b>    parse error (possibly incorrect indentation or mismatched brackets)</b>
+Prelude&gt; show (length &quot;this sentence&quot;)
+&quot;13&quot;
+</pre>

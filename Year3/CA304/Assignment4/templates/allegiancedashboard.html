@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+
+
+    <script src=
+                    "https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+    <style>
+        table {
+            margin: 0 auto;
+            font-size: large;
+            border: 1px solid black;
+            background-color: #FF0000
+        }
+
+        td {
+            background-color: #D2324E;
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td {
+            font-weight: lighter;
+        }
+    </style>
+
+    <body>
+    <section>
+
+        <table id='table'>
+            <tr>
+                <th>Name</th>
+                <th>Affiliation</th>
+                <th>Allegiance</th>
+            </tr>
+
+            <script>
+                $(document).ready(function () {
+                    $.getJSON("/allegiances",
+                        function (data) {
+                            var entry = '';
+                            $.each(data, function (key, value) {
+
+                                entry += '<tr>';
+                                entry += '<td>' +
+                                    value.Name + '</td>';
+
+                                entry += '<td>' +
+                                    value.Affiliation + '</td>';
+
+                                entry += '<td>' +
+                                    value.Allegiance + '</td>';
+
+                                entry += '</tr>';
+                            });
+
+                            //INSERTING ROWS INTO TABLE
+                            $('#table').append(entry);
+                        });
+                })
+            </script>
+        </table>
+    </section>
+    </body>
+{% endblock %}

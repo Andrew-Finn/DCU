@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/finna8/Documents/GitHub/DCU/Year3/CA341/Assignment 1/src - Imperative/BST.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head><title>Python: module ip_calculator</title>
+    <meta charset="utf-8">
+</head>
+<body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+    <tr bgcolor="#7799ee">
+        <td valign=bottom>&nbsp;<br>
+            <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>ip_calculator</strong></big></big></font>
+        </td
+        >
+        <td align=right valign=bottom
+        ><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a
+                href="file:/home/finna8/Documents/GitHub/DCU/Year3/CA314/Assignment 1/ip_calculator.py">/home/finna8/Documents/GitHub/DCU/Year3/CA314/Assignment
+            1/ip_calculator.py</a></font></td>
+    </tr>
+</table>
+<p><tt>This&nbsp;example&nbsp;module&nbsp;shows&nbsp;various&nbsp;types&nbsp;of&nbsp;documentation&nbsp;available&nbsp;for&nbsp;use<br>
+    with&nbsp;pydoc.&nbsp;&nbsp;To&nbsp;generate&nbsp;HTML&nbsp;documentation&nbsp;for&nbsp;this&nbsp;module&nbsp;issue&nbsp;the<br>
+    command:<br>
+    &nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;pydoc&nbsp;-w&nbsp;foo</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+    <tr bgcolor="#eeaa77">
+        <td colspan=3 valign=bottom>&nbsp;<br>
+            <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td>
+    </tr>
+
+    <tr>
+        <td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+        <td>&nbsp;</td>
+        <td width="100%">
+            <dl>
+                <dt><a name="-get_class_stats"><strong>get_class_stats</strong></a>(ip_addr)</dt>
+                <dd><tt>A&nbsp;function&nbsp;which&nbsp;takes&nbsp;an&nbsp;ip&nbsp;address&nbsp;identifies&nbsp;its&nbsp;class&nbsp;and&nbsp;returns&nbsp;stats&nbsp;based&nbsp;on&nbsp;that&nbsp;address&nbsp;and&nbsp;its&nbsp;class.<br>
+                    &nbsp;<br>
+                    Parameters:<br>
+                    ip_addr&nbsp;(str):&nbsp;String&nbsp;of&nbsp;the&nbsp;ip&nbsp;to&nbsp;be&nbsp;processed&nbsp;in&nbsp;the&nbsp;form&nbsp;XXX.XXX.XXX.XXX<br>
+                    &nbsp;<br>
+                    Returns:<br>
+                    Various&nbsp;stats&nbsp;on&nbsp;the&nbsp;provided&nbsp;ip&nbsp;address&nbsp;as&nbsp;a&nbsp;string&nbsp;in&nbsp;the&nbsp;following&nbsp;form:<br>
+                    string:&nbsp;"Class:&nbsp;{}&nbsp;Network:&nbsp;{}&nbsp;Host:&nbsp;{}&nbsp;First&nbsp;address:&nbsp;{}&nbsp;Last&nbsp;address:&nbsp;{}"</tt>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a name="-get_subnet_stats"><strong>get_subnet_stats</strong></a>(ip_addr, subnet_mask)</dt>
+                <dd><tt>A&nbsp;function&nbsp;which&nbsp;takes&nbsp;an&nbsp;ip&nbsp;address&nbsp;and&nbsp;subnet&nbsp;mask&nbsp;and&nbsp;identifies&nbsp;stats&nbsp;such&nbsp;as&nbsp;cidr&nbsp;address&nbsp;and&nbsp;broadcast&nbsp;addresses.<br>
+                    &nbsp;<br>
+                    Parameters:<br>
+                    ip_addr&nbsp;(str):&nbsp;String&nbsp;of&nbsp;the&nbsp;ip&nbsp;to&nbsp;be&nbsp;inputted&nbsp;in&nbsp;the&nbsp;form&nbsp;XXX.XXX.XXX.XXX<br>
+                    subnet_mask&nbsp;(str):&nbsp;String&nbsp;of&nbsp;the&nbsp;subnet_mask&nbsp;to&nbsp;be&nbsp;inputted&nbsp;in&nbsp;the&nbsp;form&nbsp;XXX.XXX.XXX.XXX<br>
+                    &nbsp;<br>
+                    Returns:&nbsp;Various&nbsp;stats&nbsp;on&nbsp;the&nbsp;provided&nbsp;ip&nbsp;address&nbsp;and&nbsp;subnet&nbsp;as&nbsp;a&nbsp;string&nbsp;in&nbsp;the&nbsp;following&nbsp;form:&nbsp;string:"'Address:<br>
+                    {}&nbsp;Subnets:&nbsp;{}&nbsp;Addressable&nbsp;hosts&nbsp;per&nbsp;subnet:&nbsp;{}&nbsp;Valid&nbsp;subnets:&nbsp;[{}]&nbsp;Broadcast&nbsp;addresses:&nbsp;[{}]&nbsp;First&nbsp;addresses:[{<br>
+                    }]&nbsp;Last&nbsp;addresses:[{}]"</tt></dd>
+            </dl>
+            <dl>
+                <dt><a name="-get_supernet_stats"><strong>get_supernet_stats</strong></a>(ip_addrs)</dt>
+                <dd><tt>A&nbsp;function&nbsp;which&nbsp;takes&nbsp;an&nbsp;ip&nbsp;address&nbsp;and&nbsp;subnet&nbsp;mask&nbsp;and&nbsp;identifies&nbsp;stats&nbsp;such&nbsp;as&nbsp;cidr&nbsp;address&nbsp;and&nbsp;broadcast&nbsp;addresses.<br>
+                    &nbsp;<br>
+                    Parameters:<br>
+                    ip_addr&nbsp;(list):&nbsp;List&nbsp;of&nbsp;the&nbsp;ips&nbsp;to&nbsp;be&nbsp;inputted&nbsp;in&nbsp;the&nbsp;form&nbsp;[XXX.XXX.XXX.XXX,&nbsp;...]<br>
+                    &nbsp;<br>
+                    Returns:<br>
+                    CIDR&nbsp;Address&nbsp;and&nbsp;network&nbsp;mask&nbsp;in&nbsp;the&nbsp;form:<br>
+                    string:&nbsp;"Address:&nbsp;{}&nbsp;Network&nbsp;Mask:&nbsp;{}"</tt></dd>
+            </dl>
+            <dl>
+                <dt><a name="-test_answer"><strong>test_answer</strong></a>()</dt>
+                <dd><tt>#&nbsp;Test&nbsp;cases&nbsp;for&nbsp;PyTest</tt></dd>
+            </dl>
+            <dl>
+                <dt><a name="-to_binary_string"><strong>to_binary_string</strong></a>(ip_addr)</dt>
+                <dd><tt>Converts&nbsp;an&nbsp;ip&nbsp;address&nbsp;represented&nbsp;as&nbsp;a&nbsp;string&nbsp;in&nbsp;decimal&nbsp;dot&nbsp;notation&nbsp;into&nbsp;a&nbsp;list&nbsp;of&nbsp;four&nbsp;binary&nbsp;strings&nbsp;each<br>
+                    representing&nbsp;one&nbsp;byte&nbsp;of&nbsp;the&nbsp;address<br>
+                    &nbsp;<br>
+                    Parameters:<br>
+                    ip_addr:&nbsp;The&nbsp;ip&nbsp;address&nbsp;as&nbsp;a&nbsp;string&nbsp;in&nbsp;decimal&nbsp;dot&nbsp;notation<br>
+                    e.g.&nbsp;"132.206.19.7"<br>
+                    &nbsp;<br>
+                    Returns:<br>
+                    An&nbsp;array&nbsp;of&nbsp;four&nbsp;binary&nbsp;strings&nbsp;each&nbsp;representing&nbsp;one&nbsp;byte&nbsp;of&nbsp;ip_addr<br>
+                    e.g.&nbsp;&nbsp;['10000100',&nbsp;'11001110',&nbsp;'00010011',&nbsp;'00000111']</tt></dd>
+            </dl>
+            <dl>
+                <dt><a name="-to_decimal_dot"><strong>to_decimal_dot</strong></a>(ip_addr_list)</dt>
+                <dd><tt>Take&nbsp;in&nbsp;an&nbsp;array&nbsp;of&nbsp;four&nbsp;strings&nbsp;representing&nbsp;the&nbsp;bytes&nbsp;of&nbsp;an&nbsp;ip&nbsp;address&nbsp;and&nbsp;convert&nbsp;it&nbsp;back&nbsp;into&nbsp;decimal&nbsp;dot&nbsp;notation<br>
+                    &nbsp;<br>
+                    Parameters:<br>
+                    ip_addr_list:&nbsp;An&nbsp;array&nbsp;of&nbsp;four&nbsp;binary&nbsp;strings&nbsp;each&nbsp;representing&nbsp;one&nbsp;byte&nbsp;of&nbsp;ip_addr<br>
+                    e.g.['10000100',&nbsp;'11001110',&nbsp;'00010011',&nbsp;'00000111']<br>
+                    &nbsp;<br>
+                    Returns:<br>
+                    The&nbsp;ip&nbsp;address&nbsp;as&nbsp;a&nbsp;string&nbsp;in&nbsp;decimal&nbsp;dot&nbsp;notation<br>
+                    e.g.'132.206.19.7'</tt></dd>
+            </dl>
+        </td>
+    </tr>
+</table>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+    <tr bgcolor="#55aa55">
+        <td colspan=3 valign=bottom>&nbsp;<br>
+            <font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td>
+    </tr>
+
+    <tr>
+        <td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+        <td>&nbsp;</td>
+        <td width="100%"><strong>ip_class</strong> = {0: ['A', 128, 16777216, '0.0.0.0', '127.255.255.255'], 1: ['B',
+            16384, 65536, '128.0.0.0', '191.255.255.255'], 2: ['C', 2097152, 256, '192.0.0.0', '223.255.255.255'], 3:
+            ['D', 'N/A', 'N/A', '224.0.0.0', '239.255.255.255'], 4: ['E', 'N/A', 'N/A', '240.0.0.0', '247.255.255.255']}<br>
+            <strong>sub_offset</strong> = {'A': -3, 'B': -2, 'C': -1}
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,13 @@
+var i : integer;
+integer test_fn (x:integer)
+{
+    var i : integer;
+    i = 2 ;
+    return (x) ;
+}
+main
+{
+    var i : integer;
+    i = 1;
+    i = test_fn (i);
+}

@@ -1,0 +1,5 @@
+main
+begin
+// a simple comment
+/* a comment /* with /* several */ nested */ comments */
+end

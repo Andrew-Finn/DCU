@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1> HomePage</h1>
+    <br>
+    <p style="text-align: center">DISCLAIMER: This image is randomly sourced from Reddit (Highly recommend
+        reloading)</p>
+    <img src="{{ image }}" alt="This is randomly selected from Reddit :)"
+         style="display: block; width:50%; height:50%; margin-left: auto; margin-right: auto; border: 5px solid #555;">
+{% endblock %}
