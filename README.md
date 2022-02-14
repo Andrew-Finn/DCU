@@ -31,5 +31,5 @@ tasks and assignments for Computer Applications
 
 - [CA4003 - Compiler Construction](https://github.com/Andrew-Finn/DCU/tree/master/Year4/CA4003/)
 - [CA4005 - Cryptography & Security Protocols](https://github.com/Andrew-Finn/DCU/tree/master/Year4/CA4005/)
-- [CA4009 - Search Technologies](https://github.com/Andrew-Finn/DCU/tree/master/Year4/CA4009/)
+- [CA4007 - Image Processing](https://github.com/Andrew-Finn/DCU/tree/master/Year4/CA4007/)
 
