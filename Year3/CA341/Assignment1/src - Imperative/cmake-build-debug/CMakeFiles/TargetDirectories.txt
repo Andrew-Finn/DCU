@@ -1,3 +1,0 @@
-/home/finna8/Documents/GitHub/DCU/Year3/CA341/Assignment 1/src - Imperative/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/finna8/Documents/GitHub/DCU/Year3/CA341/Assignment 1/src - Imperative/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/finna8/Documents/GitHub/DCU/Year3/CA341/Assignment 1/src - Imperative/cmake-build-debug/CMakeFiles/BST.dir
